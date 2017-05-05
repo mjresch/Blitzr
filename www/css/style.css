@@ -644,7 +644,7 @@
   .matchedPlayer {
     font-family: LobsterRegular;
     text-align: center;
-    font-size: 7vw;
+    font-size: 8vw;
     vertical-align: middle;
     background-color: darkcyan;
     border: 1vw darkcyan;
@@ -936,7 +936,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 45vh;
+    top: 35vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -953,7 +953,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 55vh;
+    top: 45vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -973,7 +973,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 70vh;
+    top: 60vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -993,7 +993,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 45vh;
+    top: 35vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1054,7 +1054,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 49vh;
+    top: 43vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1073,7 +1073,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%);
-    top: 58vh;
+    top: 53vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1204,28 +1204,31 @@
   #rideTheBus_title {
     position: absolute;
     font-family: LobsterRegular;
-    font-size: 20vw;
-    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 17vw;
+    margin-top: 6vh;
     font-weight: bold;
     font-style: normal;
     text-align: center;
+    align-content: center;
     color: white;
     text-shadow: 5px 5px 0 #000,
     -3px -3px 0 #000,
     3px -3px 0 #000,
     -3px 3px 0 #000,
     3px 3px 0 #000;
+    white-space: nowrap;
   }
 
   #displayName {
     position: absolute;
     font-family: LobsterRegular;
-    font-size: 7vw;
+    font-size: 8vw;
     font-style: normal;
     text-align: left;
     margin-left: 5vw;
     color: white;
-    top: 37vh;
+    top: 25vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1236,12 +1239,12 @@
   #displayTaken {
     position: absolute;
     font-family: LobsterRegular;
-    font-size: 5vw;
+    font-size: 6vw;
     font-style: normal;
     text-align: left;
     margin-left: 5vw;
     color: white;
-    top: 45vh;
+    top: 35vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1252,12 +1255,12 @@
   #displayGiven {
     position: absolute;
     font-family: LobsterRegular;
-    font-size: 5vw;
+    font-size: 6vw;
     font-style: normal;
     text-align: left;
     margin-left: 55vw;
     color: white;
-    top: 45vh;
+    top: 35vh;
     text-shadow: 4px 4px 0 #000,
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -1268,19 +1271,19 @@
   #colorOptions {
     height: 15vh;
     background-color: darkcyan;
-    top: 50vh
+    top: 45vh
   }
 
   #overOrUnderOptions {
     height: 15vh;
     background-color: darkcyan;
-    top: 50vh
+    top: 45vh
   }
 
   #insideOrOutsideOptions {
     height: 15vh;
     background-color: darkcyan;
-    top: 50vh
+    top: 45vh
   }
 
   #specialSuitsRow {
@@ -1294,12 +1297,12 @@
   #suitOptions {
     height: 20vh;
     background-color: darkcyan;
-    top: 50vh;
+    top: 42vh;
   }
 
   #cardBack1 {
     position: absolute;
-    height: 30vh;
+    height: 32vh;
     bottom: 2vh;
     left: 50%;
     transform: translate(-50%);
@@ -1315,61 +1318,61 @@
 
   #cardBack2 {
     position: absolute;
-    height: 30vh;
+    height: 32vh;
     bottom: 2vh;
     left: 50%;
-    transform: translate(20%);
+    transform: translate(55%);
   }
 
   #specialSuitsCardBack2 {
     position: absolute;
-    height: 25vh;
-    bottom: 1vh;
+    height: 32vh;
+    bottom: 2vh;
     left: 50%;
-    transform: translate(40%);
+    transform: translate(50%);
   }
 
   #hand1 {
     position: absolute;
-    height: 20vh;
-    top: 70%;
-    margin-left: 5vw;
+    height: 25vh;
+    top: 67%;
+    margin-left: 4vw;
   }
 
   /* inside or outside */
   #hand2 {
     position: absolute;
-    height: 20vh;
-    top: 70%;
+    height: 25vh;
+    top: 67%;
     margin-left: 11vw;
   }
 
   #hand3 {
     position: absolute;
-    height: 20vh;
-    top: 75%;
-    margin-left: 17vw;
+    height: 25vh;
+    top: 67%;
+    margin-left: 18vw;
   }
 
   #specialSuitsHand1 {
     position: absolute;
-    height: 20vh;
-    top: 75%;
+    height: 25vh;
+    top: 67%;
     margin-left: 5vw;
   }
 
   #specialSuitsHand2 {
     position: absolute;
-    height: 20vh;
-    top: 75%;
-    margin-left: 11vw;
+    height: 25vh;
+    top: 67%;
+    margin-left: 12vw;
   }
 
   #specialSuitsHand3 {
     position: absolute;
-    height: 20vh;
-    top: 75%;
-    margin-left: 17vw;
+    height: 25vh;
+    top: 67%;
+    margin-left: 19vw;
   }
 
   .matchPrompt {
@@ -1391,7 +1394,7 @@
   .matchedPlayer {
     font-family: LobsterRegular;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     vertical-align: middle;
     background-color: darkcyan;
     border: 1vw darkcyan;
