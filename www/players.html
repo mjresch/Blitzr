@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Players</title>
+
+</head>
+<ion-view ion-title="players" id="players" style="background-color: darkcyan">
+  <body>
+  <i class="icon ion-ios-arrow-back" id="players_back" ng-click="toHome()" style="margin-top: 2vh"></i>
+  <h1 id="players_title" style="margin-top: 7vh">Ride The Bus!</h1>
+
+  <div>
+    <div class="list list-inset" id = "playerList" style = 'height: 70vh' style = 'background-color: darkcyan'>
+      <div class="item-input" ng-repeat="player in listOfPlayers" id="playerInList">
+        <label class="item-input-wrapper">
+          <input type="text" id="enterPlayerText" placeholder="Enter Name" ng-model="player.value"/>
+        </label>
+        <button class="button button-small button-balanced"
+                ng-if="($index == listOfPlayers.length - 1) && listOfPlayers.length < 10" ng-click="addPlayer()">
+          <i class="icon ion-plus" id="plusButton"></i>
+        </button>
+
+        <button class="button button-small button-assertive" ng-if="$index != listOfPlayers.length && listOfPlayers.length > 1"
+                ng-click="removePlayer($index)">
+          <i class="icon ion-minus" id="minusButton"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <button class="button" id="goToRideTheBus" ng-click="toTheBus()">Ride</button>
+
+  </body>
+</ion-view>
+</html>

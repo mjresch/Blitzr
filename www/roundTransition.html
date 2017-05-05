@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<ion-view ion-title="roundTransition" id="roundTransition" style="background-color: darkcyan">
+  <body>
+  <h1 id="rideTheBus_title">Ride The Bus!</h1>
+  <!--<i class="icon ion-ios-home" style= "position: absolute; font-size: 4vh; color: white;-->
+      <!--margin-left: 2vw; margin-top: 1vh" ng-click="toPopUp()"></i>-->
+  <!-- display the round number and name -->
+  <h1 id="roundNumber">Round {{roundNumber}}:</h1>
+  <h1 id="roundName">{{roundName}}</h1>
+  <h1 id="rtbDisplay">{{rtbDisplay}}</h1>
+  <h1 id="nextPlayer">{{currentPlayer.getName()}}'s Turn</h1>
+
+  <h1 id="transClick">Tap to Continue</h1>
+  <button class="button" id="transButton" ng-click="toNextRound()" style="width: 100vw;
+    height: 100vh; background: transparent; position:absolute; z-index: 2"></button>
+
+  </body>
+</ion-view>
+</html>

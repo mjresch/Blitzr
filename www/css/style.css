@@ -1,0 +1,1502 @@
+/* styling for mobile app */
+@media screen and (max-width: 600px) {
+  /* HOME */
+  #info_button {
+    position: absolute;
+    font-size: 4vh;
+    color: white;
+    margin-left: 90vw;
+    margin-top: 2vh
+  }
+
+  #home_title {
+    font-family: LobsterRegular;
+    margin-top: 5vh;
+    font-size: 35vw;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #players_title {
+    font-family: LobsterRegular;
+    margin-top: 5vh;
+    font-size: 15vw;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    white-space: nowrap;
+  }
+
+  #home_background_shape1 {
+    position: absolute;
+    height: 70vh;
+    width: 80vw;
+    background-color: #ffab40;
+    border-radius: 5vw 5vw 5vw 5vw;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25vh;
+  }
+
+  #home_background_shape2 {
+    position: absolute;
+    height: 60vh;
+    width: 70vw;
+    background-color: #eeeeee;
+    border-radius: 5vw 5vw 5vw 5vw;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30vh;
+    z-index: 1;
+  }
+
+  #start_ride_the_bus {
+    position: absolute;
+    height: 10vh;
+    width: 50vw;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 5vw;
+    font-style: italic;
+    background-color: white;
+    color: black;
+    border: 1vw solid black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+    z-index: 2;
+  }
+
+  #home_fake_button {
+    position: absolute;
+    height: 20vh;
+    width: 50vw;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 8vw;
+    font-style: italic;
+    background-color: lightgreen;
+    color: black;
+    border: 1vw solid black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 65vh;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  #twitter {
+    margin-top: 52vw;
+    margin-left: 30vw;
+    background-color: #eeeeee;
+    color: deepskyblue;
+    z-index: 4;
+  }
+
+  i.ion-social-twitter {
+    font-size: 45px;
+  }
+
+  #fb {
+    margin-top: -13vw;
+    margin-left: 54vw;
+    background-color: #4b8bf4;
+    color: white;
+    z-index: 4;
+  }
+
+  i2.ion-social-facebook {
+    font-size: 35px;
+  }
+
+  /* Players Screen */
+  #playerList {
+    margin-top: 0vh;
+    background-color: darkcyan;
+  }
+
+  #players_back {
+    position: absolute;
+    font-size: 8vh;
+    color: white;
+    margin-left: 4vw;
+    margin-top: 2vh;
+  }
+
+  #playerInList {
+    background-color: darkcyan;
+    height: 5.5vh;
+    margin-bottom: 1vh;
+  }
+
+  #goToRideTheBus {
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 3vh;
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 5vh;
+    background-color: white;
+    color: black;
+    border: 1vw solid black;
+  }
+
+  input::-webkit-input-placeholder {
+    color: black;
+  }
+
+  /* round transition */
+  #roundNumber {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #roundName {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #nextPlayer {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #rtbDisplay {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  #rtbPlayers {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  #transClick {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 75vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* correct or wrong */
+  #correctOrWrong {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 15vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    z-index: 2;
+  }
+
+  #takeOrGive {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 2;
+  }
+
+  /* give drinks */
+  .Row {
+    height: 10vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .giveRow {
+    height: 10vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .matchRow {
+    height: 10vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .Column {
+    display: table-cell;
+    background-color: white; /*Optional*/
+    border: 1vh solid black;
+  }
+
+  #player_list_title {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #player_list_disp {
+    margin-left: 15vw;
+    width: 70vw;
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 1vh solid black;
+  }
+
+  #give_drink_counter {
+    font-family: LobsterRegular;
+    font-size: 7vw;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #playerToDrink {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 8vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 77vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #giveDrinksContinue {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 87vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #matchedCardsContinue {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 87vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Ride the Bus */
+  /* guess the color */
+  #rideTheBus_title {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 20vw;
+    margin-top: 5vh;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #displayName {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 7vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 5vw;
+    color: white;
+    top: 30vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #displayTaken {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 5vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 5vw;
+    color: white;
+    top: 37vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #displayGiven {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 5vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 55vw;
+    color: white;
+    top: 37vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  #colorOptions {
+    height: 10vh;
+    background-color: darkcyan;
+    top: 45vh
+  }
+
+  #overOrUnderOptions {
+    height: 10vh;
+    background-color: darkcyan;
+    top: 45vh
+  }
+
+  #suitOptions {
+    height: 20vh;
+    background-color: darkcyan;
+    top: 40vh;
+  }
+
+  #insideOrOutsideOptions {
+    height: 10vh;
+    background-color: darkcyan;
+    top: 45vh
+  }
+
+  .button_font {
+    font-size: 4vh;
+  }
+
+  #cardBack1 {
+    position: absolute;
+    height: 30vh;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #nextCard {
+    position: absolute;
+    height: 30vh;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #cardBack2 {
+    position: absolute;
+    height: 30vh;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(20%);
+  }
+
+  #specialSuitsCardBack2 {
+    position: absolute;
+    height: 30vh;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(20%);
+  }
+
+  #hand1 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 5vw;
+  }
+
+  /* inside or outside */
+  #hand2 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 11vw;
+  }
+
+  #hand3 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 17vw;
+  }
+
+  #specialSuitsHand1 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 5vw;
+  }
+
+  /* inside or outside */
+  #specialSuitsHand2 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 11vw;
+  }
+
+  #specialSuitsHand3 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 17vw;
+  }
+
+  .matchPrompt {
+    font-size: 4vw;
+    white-space: normal;
+    line-height: 1em;
+  }
+
+  .matchCardsPicture {
+    height: 17vh;
+  }
+
+  #matchCardsList {
+    height: 55vh;
+    top: 5vh;
+    background-color: darkcyan;
+  }
+
+  .matchedPlayer {
+    font-family: LobsterRegular;
+    text-align: center;
+    font-size: 7vw;
+    vertical-align: middle;
+    background-color: darkcyan;
+    border: 1vw darkcyan;
+    color: white;
+    white-space: nowrap;
+    text-shadow: 2px 2px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  .matchedPlayerRow {
+    height: 6vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+  }
+
+  #matchCardsContinue {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 87vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Game Settings */
+  #emailButton {
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #eeeeee;
+    z-index: 3;
+  }
+
+  i.ion-email {
+    font-size: 60px;
+  }
+
+  .rtbPrompt {
+    font-size: 4vw;
+    white-space: normal;
+    line-height: 1em;
+  }
+
+  /* correct or wrong */
+  #correctOrWrongRTB {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 15vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80vh;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    z-index: 2;
+  }
+
+  .results_font {
+    line-height: 1em;
+    font-size: 5vw;
+  }
+
+  .results_top {
+    top: 10vh;
+  }
+
+  #finalResultsTitle {
+    font-family: LobsterRegular;
+    text-align: center;
+    font-size: 15vw;
+    vertical-align: middle;
+    background-color: darkcyan;
+    border: 1vw darkcyan;
+    color: white;
+    white-space: normal;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+  .resultsRow {
+    height: 6vh;
+  }
+}
+
+/* styling for tablet */
+@media screen and (min-width: 601px) {
+  .button_font {
+    font-size: 5vh;
+  }
+
+  /* HOME */
+  #info_button {
+    position: absolute;
+    font-size: 5vh;
+    color: white;
+    margin-left: 90vw;
+    margin-top: 1vh
+  }
+
+  #home_title {
+    font-family: LobsterRegular;
+    margin-top: 2vh;
+    font-size: 35vw;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+  }
+
+  #players_title {
+    font-family: LobsterRegular;
+    margin-top: 5vh;
+    font-size: 15vw;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+    white-space: nowrap;
+  }
+
+  #home_background_shape1 {
+    position: absolute;
+    height: 70vh;
+    width: 80vw;
+    background-color: #ffab40;
+    border-radius: 5vw 5vw 5vw 5vw;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30vh;
+  }
+
+  #home_background_shape2 {
+    position: absolute;
+    height: 60vh;
+    width: 70vw;
+    background-color: #eeeeee;
+    border-radius: 5vw 5vw 5vw 5vw;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35vh;
+    z-index: 1;
+  }
+
+  #start_ride_the_bus {
+    position: absolute;
+    height: 10vh;
+    width: 50vw;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 5vw;
+    font-style: italic;
+    background-color: white;
+    color: black;
+    border: 1vw solid black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+    z-index: 2;
+  }
+
+  #home_fake_button {
+    position: absolute;
+    height: 20vh;
+    width: 50vw;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 8vw;
+    font-style: italic;
+    background-color: lightgreen;
+    color: black;
+    border: 1vw solid black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 70vh;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  #twitter {
+    top: 25vh;
+    left: 50%;
+    transform: translate(-120%);
+    background-color: #eeeeee;
+    color: deepskyblue;
+    z-index: 4;
+    border: 1vw solid transparent;
+  }
+
+  i.ion-social-twitter {
+    font-size: 10vh;
+  }
+
+  #fb {
+    top: 25vh;
+    left: 40vw;
+    background-color: #4b8bf4;
+    color: white;
+    z-index: 4;
+  }
+
+  i2.ion-social-facebook {
+    font-size: 10vh;
+  }
+
+  /* Players Screen */
+  #playerList {
+    margin-top: 0vh;
+    background-color: darkcyan;
+  }
+
+  #playerInList {
+    background-color: darkcyan;
+    height: 6vh;
+    margin-bottom: 0.5vh;
+  }
+
+  #enterPlayerText {
+    height: 5vh;
+    font-size: 3vh;
+  }
+
+  #players_back {
+    position: absolute;
+    font-size: 8vh;
+    color: white;
+    margin-left: 4vw;
+    margin-top: 2vh;
+  }
+
+  #goToRideTheBus {
+    position: absolute;
+    width: 50vw;
+    height: 8vh;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 3vh;
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 5vh;
+    background-color: white;
+    color: black;
+    border: 1vw solid black;
+  }
+
+  input::-webkit-input-placeholder {
+    color: black;
+  }
+
+  /* round transition */
+  #roundNumber {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #roundName {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 55vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #nextPlayer {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 70vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #rtbDisplay {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  #rtbPlayers {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  #transClick {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 85vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* correct or wrong */
+  #correctOrWrong {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 49vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    z-index: 2;
+    clear: both;
+  }
+
+  #takeOrGive {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 8vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 58vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 2;
+  }
+
+  /* give drinks */
+  .Row {
+    height: 15vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .giveRow {
+    height: 10vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .matchRow {
+    height: 25vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1vh; /*Optional*/
+  }
+
+  .Column {
+    display: table-cell;
+    background-color: white; /*Optional*/
+    border: 1vh solid black;
+  }
+
+  #player_list_title {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 3vh;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #player_list_disp {
+    margin-left: 15vw;
+    width: 70vw;
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 1vh solid black;
+  }
+
+  #give_drink_counter {
+    font-family: LobsterRegular;
+    font-size: 7vw;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 22vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #playerToDrink {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 8vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 79vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  #giveDrinksContinue {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 87vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Ride the Bus */
+  /* guess the color */
+  #rideTheBus_title {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 20vw;
+    margin-top: 5vh;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+  }
+
+  #displayName {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 7vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 5vw;
+    color: white;
+    top: 37vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #displayTaken {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 5vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 5vw;
+    color: white;
+    top: 45vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #displayGiven {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 5vw;
+    font-style: normal;
+    text-align: left;
+    margin-left: 55vw;
+    color: white;
+    top: 45vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+
+  #colorOptions {
+    height: 15vh;
+    background-color: darkcyan;
+    top: 50vh
+  }
+
+  #overOrUnderOptions {
+    height: 15vh;
+    background-color: darkcyan;
+    top: 50vh
+  }
+
+  #insideOrOutsideOptions {
+    height: 15vh;
+    background-color: darkcyan;
+    top: 50vh
+  }
+
+  #specialSuitsRow {
+    height: 10vh;
+  }
+
+  #specialSuitsRow2 {
+    height: 10vh;
+  }
+
+  #suitOptions {
+    height: 20vh;
+    background-color: darkcyan;
+    top: 50vh;
+  }
+
+  #cardBack1 {
+    position: absolute;
+    height: 30vh;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #nextCard {
+    position: absolute;
+    height: 30vh;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #cardBack2 {
+    position: absolute;
+    height: 30vh;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(20%);
+  }
+
+  #specialSuitsCardBack2 {
+    position: absolute;
+    height: 25vh;
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(40%);
+  }
+
+  #hand1 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 5vw;
+  }
+
+  /* inside or outside */
+  #hand2 {
+    position: absolute;
+    height: 20vh;
+    top: 70%;
+    margin-left: 11vw;
+  }
+
+  #hand3 {
+    position: absolute;
+    height: 20vh;
+    top: 75%;
+    margin-left: 17vw;
+  }
+
+  #specialSuitsHand1 {
+    position: absolute;
+    height: 20vh;
+    top: 75%;
+    margin-left: 5vw;
+  }
+
+  #specialSuitsHand2 {
+    position: absolute;
+    height: 20vh;
+    top: 75%;
+    margin-left: 11vw;
+  }
+
+  #specialSuitsHand3 {
+    position: absolute;
+    height: 20vh;
+    top: 75%;
+    margin-left: 17vw;
+  }
+
+  .matchPrompt {
+    font-size: 4vw;
+    white-space: normal;
+    line-height: 1em;
+  }
+
+  .matchCardsPicture {
+    height: 20vh;
+  }
+
+  #matchCardsList {
+    height: 60vh;
+    top: 5vh;
+    background-color: darkcyan;
+  }
+
+  .matchedPlayer {
+    font-family: LobsterRegular;
+    text-align: center;
+    font-size: 6vw;
+    vertical-align: middle;
+    background-color: darkcyan;
+    border: 1vw darkcyan;
+    color: white;
+    white-space: nowrap;
+    text-shadow: 4px 4px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+  }
+
+  .matchedPlayerRow {
+    height: 6vh;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+  }
+
+  #matchedCardsContinue {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 12vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 85vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Game Settings */
+  #emailButton {
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #eeeeee;
+    z-index: 3;
+  }
+
+  i.ion-email {
+    font-size: 100px;
+  }
+
+  .rtbPrompt {
+    font-size: 4vw;
+    white-space: normal;
+    line-height: 1em;
+  }
+
+  #correctOrWrongRTB {
+    position: absolute;
+    font-family: LobsterRegular;
+    font-size: 10vw;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80vh;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    z-index: 2;
+    clear: both;
+  }
+
+  .results_font {
+    line-height: 1em;
+    font-size: 4vw;
+  }
+
+  .results_top {
+    top: 15vh;
+  }
+
+  .resultsRow {
+    height: 6vh;
+  }
+
+  #finalResultsTitle {
+    font-family: LobsterRegular;
+    text-align: center;
+    font-size: 15vw;
+    vertical-align: middle;
+    background-color: darkcyan;
+    border: 1vw darkcyan;
+    color: white;
+    white-space: normal;
+    text-shadow: 4px 4px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  }
+}
+
+
+

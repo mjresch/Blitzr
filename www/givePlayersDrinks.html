@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<ion-view ion-title="givePlayersDrinks" id="givePlayersDrinks" style="background-color: darkcyan">
+  <body>
+  <h1 id="player_list_title">Select players to distribute drinks!</h1>
+  <h1 id="give_drink_counter">{{prevPlayer.getName()}}'s remaining drinks: {{remainingDrinks}}</h1>
+
+  <!-- give drink buttons -->
+  <div>
+    <div class="list list-inset" style = 'height: 55vh; background-color: darkcyan'>
+      <div class="giveRow" ng-repeat="player in listOfPlayers" ng-if="$index%2 == 0">
+        <div class="Column" ng-if="listOfPlayers[$index] != null" ng-click="giveDrink(listOfPlayers[$index])"
+             style=" font-family: Helvetica; font-style: italic; font-weight: bold; text-align: center; font-size: 3vh;
+             white-space: nowrap; vertical-align: middle">{{listOfPlayers[$index].getName()}}: {{listOfPlayers[$index].takenFromGiven}}</div>
+        <div class="Column" ng-if="listOfPlayers[$index + 1] != null" ng-click="giveDrink(listOfPlayers[$index + 1])"
+             style="font-family: Helvetica; font-style: italic; font-weight: bold; text-align: center; font-size: 3vh;
+             white-space: nowrap; vertical-align: middle">{{listOfPlayers[$index+1].getName()}}: {{listOfPlayers[$index+1].takenFromGiven}}</div>
+        <div class="Column" ng-if="listOfPlayers[$index] != null && listOfPlayers[$index + 1] == null"
+             style="border: 1vh darkcyan; background-color:darkcyan;"></div>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="playerToDrink">{{playerDisplay}}</h1>
+  <h1 id="giveDrinksContinue">{{continueMessage}}</h1>
+  <button class="button" id="giveTransButton" ng-click="toNextPlayer()" style="width: 100vw;
+    height: 100vh; background: transparent; position:absolute; border: solid transparent; z-index: 1"></button>
+  </body>
+</ion-view>
+</html>

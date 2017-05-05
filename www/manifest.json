@@ -1,0 +1,11 @@
+{
+  "name": "Blitzr",
+  "short_name": "Blitzr",
+  "start_url": "home.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

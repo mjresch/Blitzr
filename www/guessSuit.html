@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<ion-view ion-title="guessSuit" id="guessSuit" style="background-color: darkcyan">
+  <body>
+  <h1 id="rideTheBus_title">Ride The Bus!</h1>
+  <i class="icon ion-ios-home" style= "position: absolute; font-size: 4vh; color: white;
+      margin-left: 2vw; margin-top: 3vh" ng-click="toPopUp()"></i>
+  <!-- display the current player information -->
+  <h1 id="displayName">Current Player: {{currentPlayer.getName()}}</h1>
+  <h1 id="displayTaken">Drinks Taken: {{currentPlayer.getTaken()}}</h1>
+  <h1 id="displayGiven">Drinks Given: {{currentPlayer.getGiven()}}</h1>
+
+  <!-- suit buttons -->
+  <div>
+    <div class="list list-inset" id = "suitOptions">
+      <div class="Row" id="specialSuitsRow">
+        <div class="Column button_font" id="spades_button" ng-click="guessSuit('spades')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: black; color: white">SPADES</div>
+        <div class="Column button_font" id="hearts_button" ng-click="guessSuit('hearts')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: red; color: white">HEARTS</div>
+      </div>
+      <div class="Row" id="specialSuitsRow2">
+        <div class="Column button_font" id="diamonds_button" ng-click="guessSuit('diamonds')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: red; color: white">DIAMONDS</div>
+        <div class="Column button_font" id="clubs_button" ng-click="guessSuit('clubs')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: black; color: white">CLUBS</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- display the round number and name -->
+  <h1 id="correctOrWrong" style="z-index: 1">{{correctOrWrong}}</h1>
+  <h1 id="takeOrGive" style="z-index: 1">{{takeOrGive}}</h1>
+  <button class="button" id="suitTransButton" ng-click="toNextPlayer()" style="width: 100vw;
+    height: 100vh; background: transparent; position:absolute; border: solid transparent; z-index: 2"></button>
+
+  <img src ="{{nextCard.image}}" id = "specialSuitsCardBack2">
+  <img src ="{{currentPlayer.getCards()[0].image}}" id = "specialSuitsHand1">
+  <img src ="{{currentPlayer.getCards()[1].image}}" id="specialSuitsHand2">
+  <img src="{{currentPlayer.getCards()[2].image}}" id="specialSuitsHand3">
+  </body>
+</ion-view>
+</html>

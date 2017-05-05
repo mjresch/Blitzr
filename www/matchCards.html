@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<ion-view ion-title="matchCards" id="matchCards" style="background-color: darkcyan">
+  <body>
+  <i class="icon ion-ios-home" style= "position: absolute; font-size: 4vh; color: white;
+      margin-left: 2vw; margin-top: 3vh" ng-click="toPopUp()"></i>
+  <!-- cards images -->
+  <div id="flipNextCard" ng-click="onClick()">
+    <div class="list list-inset" id = "matchCardsList">
+      <div class="matchRow" ng-repeat="card in matchCards" ng-if="$index%4 == 0">
+        <div class="Column" ng-if="matchCards[$index] != null" style="border: 1vh darkcyan; background-color:darkcyan;
+              text-align: center">
+          <figure>
+            <img class="matchCardsPicture" ng-src='{{matchCards[$index].image}}'>
+            <figcaption class="matchPrompt" style="font-family: Helvetica; font-style: italic; font-weight: bold; color: white;">
+              {{matchCardsPrompt[$index]}}</figcaption>
+          </figure>
+        </div>
+        <div class="Column" ng-if="matchCards[$index + 1] != null" style="border: 1vh darkcyan;
+         background-color:darkcyan; text-align: center">
+          <figure>
+            <img class="matchCardsPicture" ng-src='{{matchCards[$index + 1].image}}'>
+            <figcaption class="matchPrompt" style="font-family: Helvetica; font-style: italic; font-weight: bold; color: white;">
+              {{matchCardsPrompt[$index + 1]}}</figcaption>
+          </figure>
+        </div>
+        <div class="Column" ng-if="matchCards[$index + 2] != null" style="border: 1vh darkcyan;
+        background-color:darkcyan; text-align: center">
+          <figure>
+            <img class="matchCardsPicture" ng-src='{{matchCards[$index + 2].image}}'>
+            <figcaption class="matchPrompt" style="font-family: Helvetica; font-style: italic; font-weight: bold; color: white;">
+              {{matchCardsPrompt[$index + 2]}}</figcaption>
+          </figure>
+        </div>
+        <div class="Column" ng-if="matchCards[$index + 3] != null" style="border: 1vh darkcyan;
+         background-color:darkcyan; text-align: center">
+          <figure>
+            <img class="matchCardsPicture" ng-src='{{matchCards[$index + 3].image}}'>
+            <figcaption class="matchPrompt" style="font-family: Helvetica; font-style: italic; font-weight: bold; color: white;">
+              {{matchCardsPrompt[$index + 3]}}</figcaption>
+          </figure>
+        </div>
+        <div class="Column" ng-if="listOfPlayers[$index] != null && listOfPlayers[$index + 1] == null"
+             style="border: 1vh darkcyan; background-color:darkcyan;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- drink display -->
+    <div class="list list-inset" id = "takeOrGivePlayers" style = 'height: 30vh; background-color: darkcyan' ng-click="onClick()">
+      <div class="matchedPlayerRow" ng-repeat="player in matchedPlayersDisplay">
+        <div class="Column matchedPlayer">{{matchedPlayersDisplay[$index]}}</div>
+      </div>
+    </div>
+
+  <h1 id="matchedCardsContinue" ng-click="onClick()" style="text-size:10vw ">{{continueMessage}}</h1>
+  </body>
+</ion-view>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<ion-view ion-title="guessColor" id="guessColor" style="background-color: darkcyan">
+  <body>
+  <h1 id="rideTheBus_title">Ride The Bus!</h1>
+  <i class="icon ion-ios-home" style= "position: absolute; font-size: 4vh; color: white;
+      margin-left: 2vw; margin-top: 3vh" ng-click="toPopUp()"></i>
+  <!-- display the current player information -->
+  <h1 id="displayName">Current Player: {{currentPlayer.getName()}}</h1>
+  <h1 id="displayTaken">Drinks Taken: {{currentPlayer.getTaken()}}</h1>
+  <h1 id="displayGiven">Drinks Given: {{currentPlayer.getGiven()}}</h1>
+
+  <!-- red or black buttons -->
+  <div>
+    <div class="list list-inset" id = "colorOptions">
+      <div class="Row">
+        <div class="Column button_font" id="red_button" ng-click="guessColor('red')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: red; color: white">RED</div>
+        <div class="Column button_font" id="black_button" ng-click="guessColor('black')" style=" font-family: Helvetica;
+        font-style: italic; font-weight: bold; text-align: center; white-space: nowrap;
+        vertical-align: middle; border: 1vw solid white; background-color: black; color: white">BLACK</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- display the round number and name -->
+  <h1 id="correctOrWrong" style="z-index: 1">{{correctOrWrong}}</h1>
+  <h1 id="takeOrGive" style="z-index: 1">{{takeOrGive}}</h1>
+  <button class="button" id="colorTransButton" ng-click="toNextPlayer()" style="width: 100vw;
+    height: 100vh; background: transparent; position:absolute; border: solid transparent; z-index: 2"></button>
+
+  <img src= "{{nextCard.image}}" id = "cardBack1">
+  </body>
+</ion-view>
+</html>
